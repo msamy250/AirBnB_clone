@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Defines the HBNB console."""
+"""Defines the HBnB console."""
 
 import cmd
 import re
