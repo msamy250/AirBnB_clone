@@ -199,9 +199,3 @@ class TestHBNBCommandCreate(unittest.TestCase):
             self.assertGreater(len(output.getvalue().strip()), 0)
             test_key = "Review.{}".format(output.getvalue().strip())
             self.assertIn(test_key, storage.all().keys())
-
-
-class TestHBNBCommandShow(unittest.TestCase):
-    """Tests for the show command of the HBNB command interpreter."""
-
-    @classmethod

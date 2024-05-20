@@ -13,6 +13,7 @@ from models.place import Place
 from models.amenity import Amenity
 from models.review import Review
 
+
 def parse(arg):
     """Parse the command line arguments."""
     curly_braces = re.search(r"\{(.*?)\}", arg)
@@ -31,9 +32,10 @@ def parse(arg):
         retl.append(curly_braces.group())
         return retl
 
+
 class HBNBCommand(cmd.Cmd):
     """Defines the HolbertonBnB command interpreter.
-    
+
     Attributes:
         prompt (str): The command prompt.
     """
